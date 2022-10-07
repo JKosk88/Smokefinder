@@ -1,0 +1,120 @@
+{
+  "nav": [
+    {
+      "text": "Solution",
+      "id": "solution"
+    },
+    {
+      "text": "Principle of working",
+      "id": "howItWorks"
+    },
+    {
+      "text": "Contact",
+      "id": "contact"
+    }
+  ],
+  "menu": [
+    {
+      "text": "Problem pożarów",
+      "id": "effects"
+    },
+    {
+      "text": "Nasze rozwiązanie",
+      "id": "solution"
+    },
+    {
+      "text": "Zasada działania",
+      "id": "howItWorks"
+    },
+    {
+      "text": "Kontakt",
+      "id": "contact"
+    }
+  ],
+  "home": {
+    "id": "home",
+    "title": "AI supported video smoke detection",
+    "description": "Smoke Finder is an edge device capable of capturing an image from any camera, enhanced with powerful AI algorithms, designed for authonomus smoke detection",
+    "button": "Contact",
+    "supportedBy": "Supported by",
+    "createdBy": "Created by"
+  },
+  "effects": {
+    "id": "effects",
+    "title": "Effects of wildfires",
+    "cards": [
+      {
+        "title": "Deforestation",
+        "description": "Our planet is consumed by over 100,000 wildfires every year, which reduce forest area up to 170 million hectares."
+      },
+      {
+        "title": "Losses",
+        "description": "Destruction of 1 ha of a forest by the fire is tantamount to lose amount wood material, which is worth about more than 5 000 dollars. However, indirect losses (related to non-productive functions of the forest and losses in the ecosystem) can be even 6 times higher."
+      },
+      {
+        "title": "Climate",
+        "description": "One tree can absorb about 6-7 kg of CO2 from the atmosphere yearly. One ha of forest area offsets exhaust emission of 4 passenger cars during one year. One ha of forest area counteract annual exhaust emission of 4 passenger cars."
+      }
+    ]
+  },
+  "benefits": {
+    "id": "solution",
+    "title": "Solution advantages",
+    "cards": [
+      {
+        "title": "Speed",
+        "description": "SmokeFinder software is able to detect even a small amount of smoke in the image from observation cameras, and inform about a fire at a very early stage of its development. SmokeFinder is a great support for operators of a fire detection system - it does not get tired, does not distract, it works all the time."
+      },
+      {
+        "title": "Profitability",
+        "description": "SmokeFinder can work with any already existing camera system, upgrading it with an intelligent image processing layer. SmokeFinder system does not require costly investments in the modernization of the ICT infrastructure."
+      },
+      {
+        "title": "Precision",
+        "description": "SmokeFinder enables a very precise mark of smoke observation angle, down to a fraction of a degree. Additionally, if SmokeFinder is installed on at least two watching towers covering the same area, it automatically determines the location of the fire."
+      }
+    ]
+  },
+  "howItWorks": {
+    "id": "howItWorks",
+    "title": " Principle of working",
+    "cards": [
+      {
+        "title": "Danger detection",
+        "description": "SmokeFinder constantly analyzes images from observation cameras for smoke searching. If even small pillars of smoke are detected, frames representing the smoke are sent to the operator."
+      },
+      {
+        "title": "Data analysis",
+        "description": "Advanced machine learning algorithms analyze the data collected from the observation camera in real time. If smoke is detected, its location is determined. Data from multiple cameras are combined to improve the firefighting action."
+      },
+      {
+        "title": "Services notification",
+        "description": "If the threat is confirmed, the appropriate local fire brigade services are alerted automatically. The system transmits information about the location of the fire, its predicted size and additional forecasts about the direction and speed of the fire spread."
+      },
+      {
+        "title": "Fire fighting",
+        "description": "By obtaining precise data from the network of sensors, foresters and fire brigades are better placed to adapt to the existing threat. In addition, SmokeFinder updates data on the fire development in real time, which allows for more efficient management of the firefighting action."
+      }
+    ]
+  },
+  "footer": {
+    "id": "contact",
+    "title": "Stay updated!",
+    "emailPlaceHolder": "Your e-mail",
+    "button": "Sign up",
+    "emailSent": "Dziękujemy, że jesteś z nami!",
+    "name": "Neuralbit Technologies sp.z o.o.",
+    "phone": "+48 505292291",
+    "contactEmail": "contact@smokefinder.com",
+    "addressLine1": "os. Centrum B 7",
+    "addressLine2": "31-620 Cracow, Poland",
+    "copyrights": "2021 © Neuralbit Technologies",
+    "policy": "Privacy Policy"
+  },
+  "meta": {
+    "title": "FireFinder",
+    "description": "Wykrywanie pożarów stało się jeszcze szybsze",
+    "lang": "pl",
+    "author": "Neuralbit"
+  }
+}
