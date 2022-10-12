@@ -601,6 +601,53 @@ $dark-grey: #333333;
   }
 }
 
+@media screen and (max-width: 767px) {
+  .home {
+    .nav {
+      #fflogo {
+        img {
+          width: 200px;
+        }
+      }
+    }
+    &_text {
+      .title {
+        margin-bottom: 16px;
+      }
+      .description {
+        text-align: justify;
+        max-width: unset;
+      }
+    }
+    .wrapper {
+      #trees-big {
+        order: 2;
+        position: relative;
+        bottom: unset;
+        right: unset;
+      }
+    }
+    .createdBy {
+      margin-bottom: 140px;
+      order: 3;
+    }
+    &_background #mouse {
+      display: none;
+    }
+  }
+
+  .benefits {
+    background-image: unset;
+    background-color: #f7faf3;
+    margin-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .section-title {
+    margin-top: 40px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .home {
     height: 750px;
