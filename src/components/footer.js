@@ -1,19 +1,17 @@
-import React, { useState } from "react"
-import data from "../content/content.json"
-import fflogo from "../images/fflogo.svg"
-import facebookIcon from "../images/facebook.svg"
-import instagramIcon from "../images/instagram.svg"
-import linkedinIcon from "../images/linkedin.svg"
-import phoneIcon from "../images/phone.svg"
-import emailIcon from "../images/email.svg"
-import addressIcon from "../images/address.svg"
-import triangleReverted from "../images/triangle-reverted.svg"
-import Button from "./button"
-import { Link } from "gatsby"
+import React, { useState } from "react";
+import data from "../content/content.json";
+import fflogo from "../images/fflogo.svg";
+import facebookIcon from "../images/facebook.svg";
+import phoneIcon from "../images/phone.svg";
+import emailIcon from "../images/email.svg";
+import addressIcon from "../images/address.svg";
+import triangleReverted from "../images/triangle-reverted.svg";
+import Button from "./button";
+import { Link } from "gatsby";
 
 const Footer = () => {
-  const [emailSent, setEmailSent] = useState(false)
-  const [email, setEmail] = useState("")
+  const [emailSent, setEmailSent] = useState(false);
+  const [email, setEmail] = useState("");
 
   const TextWithIcon = ({ icon, alt, text, additionalSpace = true }) => (
     <div
@@ -28,23 +26,23 @@ const Footer = () => {
       )}
       <span>{text}</span>
     </div>
-  )
+  );
 
   const SocialMediaIcon = ({ url, icon, alt }) => (
     <a href={url}>
       <img src={icon} alt={alt} className="icon" />
     </a>
-  )
+  );
 
-  const handleChange = e => {
-    setEmail(e.target.value)
-  }
+  const handleChange = (e) => {
+    setEmail(e.target.value);
+  };
 
   const sendEmail = () => {
-    setEmailSent(true)
-    setEmail("")
-    console.log("send email to", email)
-  }
+    setEmailSent(true);
+    setEmail("");
+    console.log("send email to", email);
+  };
 
   return (
     <div className="footer" id={data.footer.id}>
@@ -78,7 +76,7 @@ const Footer = () => {
             <span
               className="emailSent"
               onClick={() => {
-                setEmailSent(!emailSent)
+                setEmailSent(!emailSent);
               }}
             >
               {data.footer.emailSent}
@@ -87,16 +85,6 @@ const Footer = () => {
         )}
         <div className="contact">
           <div className="icons contactTextLine">
-            <SocialMediaIcon
-              icon={linkedinIcon}
-              alt="linkedin icon"
-              url="https://google.com"
-            />
-            <SocialMediaIcon
-              icon={instagramIcon}
-              alt="instagram icon"
-              url="https://google.com"
-            />
             <SocialMediaIcon
               icon={facebookIcon}
               alt="facebook icon"
@@ -123,7 +111,7 @@ const Footer = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

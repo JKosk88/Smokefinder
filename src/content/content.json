@@ -15,19 +15,19 @@
   ],
   "menu": [
     {
-      "text": "Problem pożarów",
+      "text": "Effects of wildfires",
       "id": "effects"
     },
     {
-      "text": "Nasze rozwiązanie",
+      "text": "Solution advantages",
       "id": "solution"
     },
     {
-      "text": "Zasada działania",
+      "text": "Principle of working",
       "id": "howItWorks"
     },
     {
-      "text": "Kontakt",
+      "text": "Contact",
       "id": "contact"
     }
   ],
@@ -102,12 +102,12 @@
     "title": "Stay updated!",
     "emailPlaceHolder": "Your e-mail",
     "button": "Sign up",
-    "emailSent": "Dziękujemy, że jesteś z nami!",
+    "emailSent": "Thanks for being with us!",
     "name": "Neuralbit Technologies sp.z o.o.",
     "phone": "+48 505292291",
     "contactEmail": "contact@smokefinder.com",
     "addressLine1": "os. Centrum B 7",
-    "addressLine2": "31-620 Cracow, Poland",
+    "addressLine2": "31-927 Cracow, Poland",
     "copyrights": "2021 © Neuralbit Technologies",
     "policy": "Privacy Policy"
   },

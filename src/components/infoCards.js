@@ -1,14 +1,14 @@
-import * as React from "react"
-import IconCard from "./iconCard"
-import ImageCard from "./imageCard"
-import TriangeReverted from "../images/triangle-reverted.svg"
-import TriangeRevertedGreen from "../images/triangle-reverted-green.svg"
+import * as React from "react";
+import IconCard from "./iconCard";
+import ImageCard from "./imageCard";
+import TriangeReverted from "../images/triangle-reverted.svg";
+import TriangeRevertedGreen from "../images/triangle-reverted-green.svg";
 
-const InfoCards = props => {
-  const { data } = props
+const InfoCards = (props) => {
+  const { data } = props;
   return (
     <div className={`info-cards ${props.green ? "green" : ""}`} id={data.id}>
-      {!props.green ? (
+      {/* {!props.green ? (
         <img
           src={TriangeRevertedGreen}
           alt="triangle"
@@ -20,7 +20,7 @@ const InfoCards = props => {
           alt="triangle"
           className="section-title_triangle"
         />
-      )}
+      )} */}
       <div className={`section-title`}>
         <p
           className={`title ${
@@ -49,7 +49,7 @@ const InfoCards = props => {
         )
       )}
     </div>
-  )
-}
+  );
+};
 
-export default InfoCards
+export default InfoCards;

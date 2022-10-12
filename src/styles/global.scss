@@ -2,10 +2,11 @@ $dark-green: #e6c655;
 $medium-dark-green: #fcf2cf;
 $green: #fcf2cf;
 $light-green: #f6f7f1;
-$red: #b20101;
+$red: #db4200;
 $light-red: #f57b7b;
 $grey: #171808;
 $ligth-grey: #515151;
+$dark-grey: #333333;
 
 * {
   padding: 0;
@@ -13,7 +14,7 @@ $ligth-grey: #515151;
 }
 
 .green-text {
-  color: $dark-green;
+  color: $dark-grey;
 }
 
 .grey-text {
@@ -27,7 +28,8 @@ $ligth-grey: #515151;
 .home {
   background: linear-gradient(0deg, $dark-green 0%, $green 100%);
   position: relative;
-  color: #333333;
+  color: $dark-grey;
+
   .wrapper {
     height: calc(100vh - 32px);
     min-height: 700px;
@@ -106,6 +108,7 @@ $ligth-grey: #515151;
           font-size: inherit;
           border: none;
           cursor: pointer;
+          text-transform: uppercase;
         }
       }
     }
@@ -213,15 +216,15 @@ $ligth-grey: #515151;
     .title {
       font-family: "Montserrat", sans-serif;
       font-size: 24px;
-      font-weight: 300;
       line-height: 32px;
       margin: 8px 0 40px;
+      font-weight: 500;
     }
 
     .description {
       font-family: "Hind", sans-serif;
       font-size: 17px;
-      font-weight: 300;
+      font-weight: 500;
       line-height: 24px;
       margin-bottom: 16px;
       max-width: 50%;
@@ -251,6 +254,8 @@ $ligth-grey: #515151;
     margin: auto 0 200px 0;
     justify-self: flex-end;
     z-index: 2;
+    text-transform: uppercase;
+
     // pointer-events: none;
 
     a {
@@ -266,7 +271,7 @@ $ligth-grey: #515151;
         line-height: 36px;
         font-family: "Hind", sans-serif;
         font-size: 10px;
-        font-weight: 300;
+        font-weight: 500;
       }
 
       &-image {
@@ -274,6 +279,12 @@ $ligth-grey: #515151;
       }
     }
   }
+}
+.benefits {
+  background-image: url("../images/background-info-card.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 0 0 100px 0;
 }
 
 .effects {
@@ -289,6 +300,14 @@ $ligth-grey: #515151;
 
 .info-cards > :not(.image-card:first-child).image-card {
   margin-top: 16px;
+}
+
+.info-cards {
+  .image-card:nth-child(2n + 1) {
+    .title::after {
+      transform: translate(0, -50%) rotate(180deg);
+    }
+  }
 }
 
 .info-cards > .info-card ~ .info-card {
@@ -413,10 +432,6 @@ $ligth-grey: #515151;
   }
 }
 
-.green {
-  background-color: $light-green;
-}
-
 .image {
   margin: 16px auto;
   width: 100%;
@@ -434,20 +449,29 @@ $ligth-grey: #515151;
       width: 100%;
     }
 
-    .title::after {
-      content: "";
-      display: block;
-      width: 56px;
-      height: 2px;
-      background-color: $light-red;
-      margin-top: 16px;
+    .title {
+      position: relative;
+
+      &::after {
+        content: "";
+        display: block;
+        width: 56px;
+        height: 50px;
+        background-image: url("../images/text-background-yellow.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        top: 50%;
+        left: -10px;
+        z-index: -10;
+        transform: translate(0, -50%);
+      }
     }
   }
 }
 
 .footer {
   background: linear-gradient(180deg, $green 0%, $dark-green 100%);
-  max-width: 1950px;
   margin: 0 auto;
   position: relative;
 
@@ -470,7 +494,7 @@ $ligth-grey: #515151;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    color: white;
+    color: $dark-grey;
     padding: 16px;
     margin: 0 auto;
 
@@ -480,23 +504,23 @@ $ligth-grey: #515151;
     }
 
     ::-webkit-input-placeholder {
-      color: white;
+      color: $dark-grey;
     }
 
     :-ms-input-placeholder {
-      color: white;
+      color: $dark-grey;
     }
 
     ::placeholder {
-      color: white;
+      color: $dark-grey;
     }
 
     input[type="email"] {
       padding: 20px;
       border-radius: 40px;
-      border: 2px solid white;
+      border: 2px solid $dark-grey;
       background-color: transparent;
-      color: white;
+      color: $dark-grey;
       font-size: 16px;
     }
 
@@ -572,7 +596,7 @@ $ligth-grey: #515151;
     }
 
     a {
-      color: white;
+      color: $dark-grey;
     }
   }
 }
@@ -674,6 +698,9 @@ $ligth-grey: #515151;
   .footer {
     > div {
       padding: 16px 32px;
+      .logo {
+        width: 200px;
+      }
     }
 
     .title {
@@ -741,6 +768,17 @@ $ligth-grey: #515151;
       }
     }
   }
+
+  .footer {
+    > div {
+      padding: 16px 32px;
+
+      .logo {
+        width: 200px;
+        margin-top: 130px;
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 1280px) {
@@ -775,7 +813,7 @@ $ligth-grey: #515151;
 
   .info-cards {
     .section-title {
-      margin: 50px 0;
+      margin: 50px 0 15px 0;
 
       &_triangle {
         display: none;
@@ -787,6 +825,10 @@ $ligth-grey: #515151;
     margin-top: -120px;
   }
 
+  .benefits {
+    padding-top: 100px;
+  }
+
   .effects,
   .benefits {
     .info-cards {
@@ -795,6 +837,7 @@ $ligth-grey: #515151;
       margin: 0 auto;
       padding: 0 48px 48px;
       justify-content: center;
+      gap: 35px;
 
       .section-title {
         flex: 1 100%;
@@ -835,7 +878,7 @@ $ligth-grey: #515151;
   }
 
   .howItWorks {
-    :nth-child(2n).image-card {
+    :nth-child(2n + 1).image-card {
       flex-direction: row-reverse;
 
       .image-wrapper {
@@ -892,10 +935,31 @@ $ligth-grey: #515151;
 
   .footer {
     > div {
-      padding: 0 72px;
+      padding: 200px 72px 0px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      gap: 50px;
+      align-items: flex-start;
+
+      .logo {
+        width: unset;
+        flex: 0 1 305px;
+        margin: unset;
+      }
+
+      .emailForm {
+        order: 1;
+        flex: 0 1 305px;
+
+        .title {
+          margin: 0 0 20px 0;
+        }
+      }
 
       .contact {
-        width: 1136px;
+        width: unset;
+        flex: 0 1 305px;
       }
     }
   }
@@ -960,8 +1024,8 @@ $ligth-grey: #515151;
 
   .footer {
     > div {
-      padding: 0 72px;
-
+      padding-top: calc(15vw + 50px);
+      max-width: 1366px;
       .contact {
         max-width: 1200px;
       }
