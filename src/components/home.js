@@ -1,7 +1,6 @@
 import * as React from "react";
 import data from "../content/content.json";
 import triangle from "../images/home-triangle-bottom.svg";
-import trees from "../images/trees.svg";
 import treesBig from "../images/trees-big.svg";
 import mouse from "../images/mouse.svg";
 import mouseScroll from "../images/mouse-scroll.svg";
@@ -18,7 +17,6 @@ const Home = () => {
   return (
     <div className="home" id={data.home.id}>
       <div className="wrapper">
-        {/* <img src={trees} alt="trees icon" id="trees" /> */}
         <img src={treesBig} alt="trees icon" id="trees-big" />
         <Nav />
         <div className="home_text">

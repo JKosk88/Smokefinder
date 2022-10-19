@@ -8,19 +8,6 @@ const InfoCards = (props) => {
   const { data } = props;
   return (
     <div className={`info-cards ${props.green ? "green" : ""}`} id={data.id}>
-      {/* {!props.green ? (
-        <img
-          src={TriangeRevertedGreen}
-          alt="triangle"
-          className="section-title_triangle"
-        />
-      ) : (
-        <img
-          src={TriangeReverted}
-          alt="triangle"
-          className="section-title_triangle"
-        />
-      )} */}
       <div className={`section-title`}>
         <p
           className={`title ${

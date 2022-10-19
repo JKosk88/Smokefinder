@@ -547,14 +547,11 @@ $dark-grey: #333333;
 
     .contact {
       margin: 0 auto;
-      width: 800px;
       max-width: 100%;
       padding-bottom: 4px;
+      align-self: center;
 
       .icons {
-        // display: inline-block;
-        // margin: 0;
-
         :not(:last-child.icon) {
           margin-right: 24px;
         }
