@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `FireFinder`,
-    description: `FireFinder`,
+    title: `SmokeFinder`,
+    description: `SmokeFinder`,
     author: `Neuralbit`,
   },
   plugins: [
@@ -24,7 +24,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `FireFinder`,
+        name: `SmokeFinder`,
         short_name: `starter`,
         start_url: `/`,
         background_color: `#663399`,

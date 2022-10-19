@@ -5,16 +5,16 @@
  * See: https://www.gatsbyjs.com/docs/use-static-query/
  */
 
-import * as React from "react"
-import { Helmet } from "react-helmet"
-import data from "../content/content.json"
-import image from "../images/fflogo.svg"
+import * as React from "react";
+import { Helmet } from "react-helmet";
+import data from "../content/content.json";
+import image from "../images/fflogo.svg";
 
 function Seo() {
   return (
     <Helmet
       htmlAttributes={{
-        leng: data.meta.lang,
+        lang: data.meta.lang,
       }}
       title={data.meta.title}
       titleTemplate={data.meta.title ? `%s | ${data.meta.author}` : null}
@@ -57,13 +57,13 @@ function Seo() {
         },
       ].concat(data.meta)}
     />
-  )
+  );
 }
 
 Seo.defaultProps = {
   lang: `en`,
   meta: [],
   description: ``,
-}
+};
 
-export default Seo
+export default Seo;

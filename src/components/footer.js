@@ -52,7 +52,7 @@ const Footer = () => {
         className="triangle-reverted"
       />
       <div>
-        <img src={fflogo} alt="firefinder logo" className="logo" />
+        <img src={fflogo} alt="SmokeFinder logo" className="logo" />
         {!emailSent ? (
           <div className="emailForm">
             <span className="title">{data.footer.title}</span>

@@ -20,7 +20,7 @@ const Nav = () => {
             scrollTo(`#${data.home.id}`);
           }}
         >
-          <img src={fflogo} alt="firefinder logo" />
+          <img src={fflogo} alt="SmokeFinder logo" />
         </button>
         <div className="links">
           <button onClick={handleClick} id="menu">
