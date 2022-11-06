@@ -244,10 +244,6 @@ $dark-grey: #333333;
     pointer-events: none;
   }
 
-  // // #trees-big {
-  // //   display: none;
-  // }
-
   .createdBy {
     display: flex;
     flex-direction: row;
@@ -255,8 +251,6 @@ $dark-grey: #333333;
     justify-self: flex-end;
     z-index: 2;
     text-transform: uppercase;
-
-    // pointer-events: none;
 
     a {
       color: #333333;
@@ -595,6 +589,23 @@ $dark-grey: #333333;
     a {
       color: $dark-grey;
     }
+  }
+}
+
+.rawTextSite {
+  background: linear-gradient(180deg, $dark-green, $medium-dark-green);
+  color: #fff;
+  font-family: Hind;
+  font-size: 16px;
+  line-height: 30px;
+  min-height: 100vh;
+  padding: 150px 50px;
+  position: absolute;
+  top: 0;
+
+  p {
+    margin: 16px 0;
+    line-height: 20px;
   }
 }
 

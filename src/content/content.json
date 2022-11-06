@@ -97,6 +97,11 @@
       }
     ]
   },
+  "funding": {
+    "title": "Neuralbit Technologies sp. z o. o. is realizing a project co-financed by European Funds \"SmokeFinder - an innovative forest fires visual detection system, empowered by artificial intelligence algorithms\".",
+    "description": "Proposal of the project is to develop early smoke detection system with use of video surveillance systems. The innovation in approach to the matter is decetralized operation of machine learning algorithms which analyse images from surveillance cameras. The end device empowered with machine learning accelerator that will be working directly at the data source - vision camera, will be developed under the project.",
+    "financing": "Co-financing of the project from the EU: 1 332 157,35 PLN"
+  },
   "footer": {
     "id": "contact",
     "title": "Stay updated!",

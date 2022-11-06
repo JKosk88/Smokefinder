@@ -1,8 +1,6 @@
 import * as React from "react";
 import IconCard from "./iconCard";
 import ImageCard from "./imageCard";
-import TriangeReverted from "../images/triangle-reverted.svg";
-import TriangeRevertedGreen from "../images/triangle-reverted-green.svg";
 
 const InfoCards = (props) => {
   const { data } = props;

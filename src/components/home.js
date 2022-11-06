@@ -25,7 +25,7 @@ const Home = () => {
           <Button
             text={data.home.button}
             click={() => {
-              document.getElementById("email").focus();
+              document.getElementById("email")?.focus();
               scrollTo(`#${data.footer.id}`);
             }}
           />
