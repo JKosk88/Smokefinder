@@ -592,6 +592,11 @@ $dark-grey: #333333;
   }
 }
 
+.infoFooter {
+  display: flex;
+  justify-content: center;
+}
+
 .rawTextSite {
   background: linear-gradient(180deg, $dark-green, $medium-dark-green);
   color: #fff;

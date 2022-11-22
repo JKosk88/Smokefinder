@@ -5,6 +5,7 @@ import Benefits from "../components/benefits"
 import HowItWorks from "../components/howItWorks"
 import Footer from "../components/footer"
 import Seo from "../components/seo"
+import InfoFooter from "../components/infoFooter";
 
 const IndexPage = () => (
   <>
@@ -14,6 +15,7 @@ const IndexPage = () => (
     <Benefits />
     <HowItWorks />
     <Footer />
+    <InfoFooter />
   </>
 )
 
