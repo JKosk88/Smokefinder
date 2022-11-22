@@ -595,6 +595,10 @@ $dark-grey: #333333;
 .infoFooter {
   display: flex;
   justify-content: center;
+
+  * {
+    max-height: 100px;
+  }
 }
 
 .rawTextSite {
